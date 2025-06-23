@@ -8,10 +8,6 @@ cloud:
     stack:
       auto:false
 
-application:
-  bucket:
-    name:
-
 
 server:
   port: 9001
