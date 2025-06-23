@@ -1,0 +1,28 @@
+cloud:
+  aws:
+    credentials:
+      access-key:
+      secret-key:
+    region:
+      static: us-east-1
+    stack:
+      auto:false
+
+application:
+  bucket:
+    name:
+
+
+server:
+  port: 9001
+
+#  Here we are using the dependency is valid upto only dec, 2025.
+#  Later it got shifted from sdk dependency to ses (mentioned below)
+#  <!-- https://mvnrepository.com/artifact/software.amazon.awssdk/ses -->
+#  <dependency>
+#  <groupId>software.amazon.awssdk</groupId>
+#  <artifactId>ses</artifactId>
+#  <version>2.31.68</version>
+#  </dependency>
+#
+#  Alternatively, we need to do code changes.
